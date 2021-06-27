@@ -1,0 +1,607 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --gold-color: rgb(206, 159, 43);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  font-size: 0.9rem;
+  /* background: rgba(218, 183, 87, 0.1); */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Utility */
+.custom-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  /* max-width: 1000px !important; */
+}
+
+.header-container {
+  max-width: 1200px;
+  padding: 0.7rem 0;
+}
+
+.custom-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background: var(--gold-color);
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.underscore {
+  width: 4rem;
+  height: 2px;
+  background: var(--gold-color);
+  margin-top: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+/* Header */
+header {
+  font-size: 0.9rem;
+}
+
+nav {
+  height: 8vh;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+#nav-items-large {
+  display: flex;
+  align-items: center;
+}
+
+#nav-items {
+  display: none;
+}
+
+.nav-item {
+  padding: 1rem;
+}
+
+#nav-items-large li a,
+#nav-items li a,
+#nav-items-large li a.active,
+#nav-items li a.active {
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+}
+
+#nav-items-large li a:hover,
+#nav-items li a:hover,
+#nav-items-large li a.active,
+#nav-items li a.active {
+  color: var(--gold-color);
+  border-bottom: 2px solid var(--gold-color);
+}
+
+#hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.ham-bar1 {
+  width: 15px;
+  height: 3px;
+  background: #000;
+  margin: 4px 0;
+}
+
+.ham-bar2 {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  margin: 4px 0;
+}
+
+.ham-bar3 {
+  width: 20px;
+  height: 3px;
+  background: #000;
+  margin: 4px 0;
+}
+
+/* Service hours */
+.service-hours-container {
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  transform: translateY(-35%);
+  z-index: 15;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#service-hours, #book-app {
+  width: 46%;
+}
+
+#service-hours > p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+#service-hours table {
+  margin: auto;
+}
+
+#service-hours table tr td {
+  padding-top: 1rem !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#all-services {
+  border: 1px solid var(--gold-color);
+  padding: 2rem;
+  position: relative;
+}
+
+#services-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  padding: 0.5rem 0;
+  color: #fff;
+  text-align: center;
+  width: 200px;
+}
+
+#services-inner-header {
+  text-align: center;
+}
+
+/* Book App */
+#book-app {
+  /* width: 400px; */
+  /* top: 50%; */
+  /* right: 10%; */
+  /* z-index: 11; */
+  font-size: 0.8rem;
+}
+
+#book-app form {
+  padding: 3.5em 3rem 4rem 3rem;
+  border: 1px solid var(--gold-color);
+  /* border-radius: 5px; */
+  background: #F6F6F6;
+}
+
+#book-app form p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#book-app input,
+#book-app select  {
+  border:none;
+  padding: 0.5rem;
+  background: #fff;
+  outline: none;
+  margin-bottom: 2rem;
+  width: 100%;
+  background: rgb(255,255,255,0.8);
+}
+
+#book-app button {
+  width: 100%;
+}
+
+/* Showcase */
+/* .carousel {
+  overflow: hidden;
+  border-radius: 20px;
+} */
+#showcase {
+  position: relative;
+}
+
+.showcase-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  /* max-width: 1000px !important; */
+}
+
+#showcase img {
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#showcase .custom-button {
+  border: 1px solid var(--gold-color);
+}
+
+.carousel {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #ce9f2b;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 3px;
+  background-color: #fff;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.carousel-caption {
+  bottom: 15%;
+}
+
+.carousel-caption button {
+  border: 2px solid #ce9f2b;
+}
+
+.caption {
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  top: 25%;
+  left: 10%;
+  width: 80%;
+  max-width: 500px;
+  /* text-align: center; */
+  /* transform: translateX(-50%); */
+}
+
+.riyaz-head{
+  text-transform: uppercase;
+  color: var(--gold-color);
+  font-size: 3.5rem;
+  /* margin-bottom: 1rem; */
+}
+
+.riyaz-body {
+  font-size: 0.9rem;
+  margin-bottom: 2rem !important;
+}
+
+/* About */
+#about {
+  margin-top: -8rem;
+}
+
+#about .about-us {
+  color: var(--gold-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+#about .welcome {
+  line-height: 0.5rem;
+}
+
+#about-info {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Services */
+#services h3 {
+  text-align: center;
+}
+
+#services .underscore {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+#services .service {
+  position: relative;
+  border: 1px solid var(--gold-color);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#services .service img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.service-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 1rem;
+  padding: 15px;
+  text-align: center;
+  border-radius: 0 0 50% 50%;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.service:hover .service-overlay {
+  opacity: 1;
+}
+
+/* Barbers */
+#barbers {
+  background: #2e2d2d;
+  color: #fff;
+  padding: 1rem 0 2rem 0;
+  padding-top: 3rem;
+}
+
+#barbers h3 {
+  text-align: center;
+}
+
+#barbers .underscore {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+#barbers .barber {
+  width: 200px;
+  height: 200px;
+}
+
+#barbers .barber-image {
+  height: 80%;
+  background: #000;
+  border-radius: 20px 20px 0 0;
+}
+
+#barbers .barber-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+#barbers .barber-name {
+  height: 20%;
+  background: var(--gold-color);
+  border-radius: 0 0 20px 20px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.gallery-header {
+  text-align: center;
+}
+
+.gallery .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Contact */
+#contact {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+#contact form {
+  padding: 3.5em 3rem 4rem 3rem;
+  border: none;
+  background: #2e2d2d;
+}
+
+#contact form p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#contact input,
+#contact select,
+#contact textarea  {
+  border:none;
+  padding: 0.5rem;
+  background: #fff;
+  outline: none;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+#contact button {
+  width: 100%;
+}
+
+/* Footer */
+#footer {
+  background: #2e2d2d;
+  padding: 2.2rem 0;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 25px 25px 0 0;
+}
+
+#footer #inner-footer {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+#footer i {
+  color: var(--gold-color);
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+#footer a {
+  transition: color 0.3s ease-in-out;
+}
+
+#footer a:hover {
+  color: var(--gold-color);
+}
+
+#footer .footer-content-header {
+  font-weight: 1rem;
+}
+
+#footer .content-list .footer-content-item {
+  margin-bottom: 0.7rem;
+}
+
+@media screen and (max-width: 800px) {
+  .gallery .column{
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Media queries */
+@media (max-width: 865px) {
+  #nav-items-large {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  /* Modal */
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  #nav-items {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70vw;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+
+  /* Add Animation */
+  @keyframes animatetop {
+    from {
+      right: -300px;
+      opacity: 0;
+    }
+    to {
+      right: 0;
+      opacity: 1;
+    }
+  }
+}
+
+/* scroll to top */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent;
+  color: rgb(160, 119, 16); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  /* padding: 15px; */
+  border-radius: 10px; 
+  font-size: 2rem; /* Increase font size */
+}
+
+#myBtn:hover {
+  opacity: 0.8;
+}
+
